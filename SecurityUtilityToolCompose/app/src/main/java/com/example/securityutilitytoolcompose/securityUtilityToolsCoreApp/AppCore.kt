@@ -1,7 +1,12 @@
-package com.example.securityutilitytoolcompose
+package com.example.securityutilitytoolcompose.securityUtilityToolsCoreApp
 
 import androidx.compose.runtime.*
 import androidx.navigation.NavHostController
+import com.example.securityutilitytoolcompose.R
+import com.example.securityutilitytoolcompose.VaultTab
+import com.example.securityutilitytoolcompose.securityUtilityToolsEncryption.EncryptionTab
+import com.example.securityutilitytoolcompose.securityUtilityToolsSettings.SecurityUtilityTools_Settings
+import com.example.securityutilitytoolcompose.securityUtilityToolsSettings.SettingsTab
 import com.example.securityutilitytoolcompose.ui.builtin_functions.SecurityUtilityToolTabRow
 
 

@@ -1,4 +1,4 @@
-package com.example.securityutilitytoolcompose
+package com.example.securityutilitytoolcompose.securityUtilityToolsCoreApp
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity

@@ -1,4 +1,4 @@
-package com.example.securityutilitytoolcompose
+package com.example.securityutilitytoolcompose.securityUtilityToolsEncryption
 
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.layout.Row
@@ -12,6 +12,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.unit.dp
 import androidx.navigation.NavHostController
+import com.example.securityutilitytoolcompose.R
 
 @Composable
 fun EncryptionTab(navController: NavHostController) {

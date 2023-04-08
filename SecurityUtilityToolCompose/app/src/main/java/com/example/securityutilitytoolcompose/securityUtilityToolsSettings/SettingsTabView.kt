@@ -1,4 +1,4 @@
-package com.example.securityutilitytoolcompose
+package com.example.securityutilitytoolcompose.securityUtilityToolsSettings
 
 import androidx.compose.foundation.layout.*
 import androidx.compose.material.Button
@@ -21,28 +21,25 @@ fun SettingsTab(navController: NavHostController) {
             fontWeight = FontWeight.Bold,
             modifier = Modifier.padding(16.dp)
         )
-        SettingButton( "Vault", {
+        SettingButton( "Vault") {
             navController.navigate("settingsVault")
-        })
-        SettingButton( "Encryption", {
+        }
+        SettingButton( "Encryption") {
             navController.navigate("settingsEncryption")
-
-        })
-
-        SettingButton( "Theme", {
+        }
+        SettingButton( "Appearance") {
             navController.navigate("settingsTheme")
+        }
 
-        })
-        
         Spacer(modifier = Modifier.height(100.dp))
 
-        SettingButton( "Donate", {
+        SettingButton( "Donate") {
 
-        })
+        }
 
-        SettingButton( "Source Code", {
+        SettingButton( "Source Code") {
 
-        })
+        }
     }
 }
 
