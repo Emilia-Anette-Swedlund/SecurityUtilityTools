@@ -21,8 +21,8 @@ fun SettingsTab(navController: NavHostController) {
             fontWeight = FontWeight.Bold,
             modifier = Modifier.padding(16.dp)
         )
-        SettingButton( "Vault") {
-            navController.navigate("settingsVault")
+        SettingButton( "Messaging/Contacts") {
+            navController.navigate("settingsSMS")
         }
         SettingButton( "Encryption") {
             navController.navigate("settingsEncryption")

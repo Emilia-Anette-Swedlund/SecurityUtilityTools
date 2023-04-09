@@ -5,9 +5,11 @@ import androidx.navigation.NavHostController
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
+import com.example.securityutilitytoolcompose.securityUtilityToolsMessaging.newMessagePage
 import com.example.securityutilitytoolcompose.securityUtilityToolsSettings.SettingsEncryption
 import com.example.securityutilitytoolcompose.securityUtilityToolsSettings.SettingsTheme
 import com.example.securityutilitytoolcompose.securityUtilityToolsSettings.SettingsVault
+import com.example.securityutilitytoolcompose.securityUtilityToolsSettings.settingsSMS
 
 @Composable
 fun SetNavHost(): NavHostController {
@@ -25,6 +27,13 @@ fun SetNavHost(): NavHostController {
         composable("settingsTheme") { backStackEntry ->
             SettingsTheme(navController)
         }
+        composable("settingsSMS") { backStackEntry ->
+            settingsSMS(navController)
+        }
+        composable("newMessage") { backStackEntry ->
+            newMessagePage(navController)
+        }
+
     }
 
     return navController

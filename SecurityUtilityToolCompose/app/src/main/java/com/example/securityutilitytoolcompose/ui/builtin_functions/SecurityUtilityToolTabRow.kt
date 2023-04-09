@@ -16,7 +16,7 @@ import androidx.compose.ui.unit.dp
 fun SecurityUtilityToolTabRow(tabTitles: List<String>? = null,
                               tabImages: List<Int>? = null,
                               tabDescriptions: List<String>? = null,
-                              initallySelectedTab: Int = 0,
+                              initiallySelectedTab: Int = 0,
                               OnTabSelected: (Int) -> Unit ) {
 
     requireNotNull(tabDescriptions) { "SecurityUtilityToolTabRows require a description list to be passed." }
@@ -26,7 +26,7 @@ fun SecurityUtilityToolTabRow(tabTitles: List<String>? = null,
     require(tabImages == null || tabImages.size == tabDescriptions.size) { "SecurityUtilityToolTabRows requires tabImages to have the same length as tabDescriptions if both exist, Currently they both exist and have different lengths."}
 
     val numberOfTabs = tabDescriptions.size - 1
-    var selectedTabIndex by remember { mutableStateOf(initallySelectedTab) }
+    var selectedTabIndex by remember { mutableStateOf(initiallySelectedTab) }
 
     Column(modifier = Modifier.fillMaxSize()) {
         Box(modifier = Modifier.weight(1f))
