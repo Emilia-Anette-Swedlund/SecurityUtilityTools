@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">Sec SMS</string>
+    <string name="Yes">Yes</string>
+    <string name="cancel">Cancel</string>
+    <string name="password_incorrect_make_new_profile">Incorrect Password. Would you like to make a new profile with new keys. (This will not erase or delete older keys and you will still be able to log in with old passwords to access them)</string>
+</resources>
